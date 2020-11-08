@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.meichel</groupId>
     <artifactId>maven-playground</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>maven-playground</name>
 
     <properties>
@@ -74,7 +73,8 @@
         <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>
         <!-- Is this required for mvn release:prepare? -->
         <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
-    </scm>
+      <tag>maven-playground-0.0.1</tag>
+  </scm>
     <build>
         <!-- defaultGoal is executed when no plugin:goal is given when calling mvn <cmd> -->
         <defaultGoal>verify</defaultGoal>
