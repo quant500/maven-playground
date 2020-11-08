@@ -62,8 +62,8 @@
 
     <!-- Used by mvn release:prepare -->
     <scm>
-<!--        <connection>scm:local|z:/altDeploymentDirectory|maven-playground</connection>-->
-        <developerConnection>scm:local|z:/altDeploymentDirectory|maven-playground</developerConnection>
+        <connection>scm:git:filel|Z:/IntelliJWorkspaces/maven-playground.git</connection>
+        <developerConnection>scm:git:filel|Z:/IntelliJWorkspaces/maven-playground.git</developerConnection>
         <!--
                 <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>
                 <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
