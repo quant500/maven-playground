@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.meichel</groupId>
     <artifactId>maven-playground</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>maven-playground</name>
 
     <properties>
@@ -60,12 +60,9 @@
     </dependencies>
 
     <scm>
-        <connection>scm:local|z:/altDeploymentDirectory|maven-playground</connection>
-        <developerConnection>scm:local|z:/altDeploymentDirectory|maven-playground</developerConnection>
-<!--
         <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>
         <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
--->
+      <tag>maven-playground-0.0.2</tag>
   </scm>
     <distributionManagement>
         <snapshotRepository>
