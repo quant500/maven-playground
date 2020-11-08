@@ -64,6 +64,8 @@
         <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
     </scm>
     <build>
+        <!-- defaultGoal is executed when no plugin:goal is given when calling mvn <cmd> -->
+        <defaultGoal>verify</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
