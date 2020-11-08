@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.meichel</groupId>
     <artifactId>maven-playground</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>maven-playground</name>
 
     <properties>
@@ -73,7 +73,6 @@
 <!--        <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>-->
         <!-- Is this required for mvn release:prepare? -->
         <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
-    <tag>maven-playground-0.0.2</tag>
   </scm>
     <build>
         <!-- defaultGoal is executed when no plugin:goal is given when calling mvn <cmd> -->
