@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.5.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.meichel</groupId>
     <artifactId>maven-playground</artifactId>
@@ -59,14 +60,16 @@
         </dependency>
     </dependencies>
 
+    <!-- Used by mvn release:prepare -->
     <scm>
-        <connection>scm:local|z:/altDeploymentDirectory|maven-playground</connection>
+<!--        <connection>scm:local|z:/altDeploymentDirectory|maven-playground</connection>-->
         <developerConnection>scm:local|z:/altDeploymentDirectory|maven-playground</developerConnection>
-<!--
-        <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>
-        <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
--->
-  </scm>
+        <!--
+                <connection>scm:git:git:https://github.com/quant500/maven-playground.git</connection>
+                <developerConnection>scm:git:git:https://github.com/quant500/maven-playground.git</developerConnection>
+        -->
+    </scm>
+    <!-- Used by mvn deploy -->
     <distributionManagement>
         <snapshotRepository>
             <id>snapshot-repo</id>
@@ -77,18 +80,18 @@
             <url>file:///z:/altDeploymentDirectory/release/</url>
         </repository>
     </distributionManagement>
-<!--
-    <distributionManagement>
-        <snapshotRepository>
-            <id>axa-snapshots</id>
-            <url>https://portal.paas.intraxa/nexus/content/repositories/axa-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>axa-releases</id>
-            <url>https://portal.paas.intraxa/nexus/content/repositories/axa-releases/</url>
-        </repository>
-    </distributionManagement>
--->
+    <!--
+        <distributionManagement>
+            <snapshotRepository>
+                <id>axa-snapshots</id>
+                <url>https://portal.paas.intraxa/nexus/content/repositories/axa-snapshots/</url>
+            </snapshotRepository>
+            <repository>
+                <id>axa-releases</id>
+                <url>https://portal.paas.intraxa/nexus/content/repositories/axa-releases/</url>
+            </repository>
+        </distributionManagement>
+    -->
 
     <build>
         <!-- defaultGoal is executed when no plugin:goal is given when calling mvn <cmd> -->
